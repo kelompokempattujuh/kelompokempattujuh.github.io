@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Implentasi</title>
+    <style>
+        /* CSS: Mempercantik Tampilan */
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover { background-color: #0056b3; }
+        #message { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- HTML: Struktur Konten -->
+    <h2>Halo Dunia!</h2>
+    <button class="btn" onclick="showMessage()">Klik Saya</button>
+    <p id="message"></p>
+
+    <script>
+        // JavaScript: Menambahkan Interaktivitas
+        function showMessage() {
+            document.getElementById("message").innerText = "Tombol telah diklik!";
+        }
+    </script>
+
+</body>
+</html>
